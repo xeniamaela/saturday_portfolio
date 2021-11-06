@@ -1,3 +1,9 @@
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 [class*="col-"] {
     width: 100%;
 }

@@ -130,15 +130,12 @@ nav ul li a:hover {
 @media only screen and (max-width: 600px) {
   .footer-icons {
     padding: 20px;
-    background-color: #191919;
-    text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
   }
   .footer-icons__icon {
-    color: white;
     padding: 10px;
   }
 }
@@ -147,16 +144,128 @@ nav ul li a:hover {
   .footer-icons {
     padding: 20px 0px;
     width: 100%;
-    background-color: #191919;
-    text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
   }
   .footer-icons__icon {
-    color: white;
     padding: 10px;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .about__img {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__text {
+    text-align: justify;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .about__img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__text {
+    font-size: large;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: 30rem;
+  }
+}
+
+.box {
+  border: 1px solid grey;
+  background-color: #d3d3d3;
+}
+
+.large {
+  font-size: 150%;
+}
+
+.navbar-brand {
+  font-size: 1.8em;
+}
+
+#topContainer {
+  background-color: #e0e0e0;
+  background-size: cover;
+  width: 100%;
+}
+
+#topRow h1 {
+  font-size: 300%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.marginTop {
+  margin-top: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  margin-top: 100px;
+  font-size: 300%;
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects__title {
+  margin: 40px;
+  text-align: center;
+  color: black;
+}
+
+.col-6 {
+  float: left;
+  width: 50%;
+  padding: 0px 40px;
+  padding-bottom: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.contact__title {
+  text-align: center;
+}
+
+.contact__info form .form-group {
+  margin: 20px 10px;
 }
 
 * {
@@ -165,6 +274,12 @@ nav ul li a:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 [class*="col-"] {
@@ -249,5 +364,125 @@ nav ul li a:hover {
   .col-12 {
     width: 100%;
   }
+}
+
+.col {
+  float: left;
+  width: 33.3%;
+  padding: 10px 40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding: 16px;
+  text-align: center;
+  border: groove;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: 400;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: large;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #191919;
+  color: white;
+  display: block;
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 400;
+  border-color: gray;
+  text-align: center;
+}
+
+.button__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-input__info {
+  display: block;
+  width: 100%;
+  border-color: lightgrey;
+  border-style: groove;
+  border-radius: 5px;
+  border-width: .1px;
+  padding: 10px;
+}
+
+.u-color__white {
+  color: white;
+}
+
+.u-color__black {
+  color: #191919;
+}
+
+.u-color__indigo {
+  color: #5865f2;
+}
+
+.u-bg__indigo {
+  background-color: #5865f2;
+}
+
+.u-bg__black {
+  background-color: #191919;
+}
+
+.u-align__center {
+  text-align: center;
+}
+
+.u-m__40 {
+  margin: 40px;
+}
+
+.u-mt__20 {
+  margin-top: 20px;
+}
+
+.u-mb__20 {
+  margin-bottom: 50px;
+}
+
+.u-mb__50 {
+  margin-bottom: 50px;
+}
+
+.u-p__40 {
+  padding: 40px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+.button {
+    text-decoration: none;
+    background-color: #191919;
+    color: white;
+    display: block;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 400;
+    border-color: gray;
+    text-align: center;
+}
+
+.button__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

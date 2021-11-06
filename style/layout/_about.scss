@@ -1,0 +1,37 @@
+@media only screen and (max-width: 600px) {
+    .about {
+    
+        &__img {
+            width: 100%;
+            justify-content: center;
+        }
+    
+        &__text {
+            text-align: justify;
+            justify-content: space-around;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 601px) {
+
+    .about {
+        &__img {
+            width: 80%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        &__text {
+            font-size: large;
+            text-align: justify;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            width: 30rem;
+        }
+    }
+
+}

@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
-    <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <!-- External CSS -->
@@ -27,11 +24,11 @@
     <!-- NAV BAR -->
     <nav>
 		<ul class="nav-links" id="menu">
-            <li><a href="#" class="nav-brand"><i class="bi bi-x-diamond-fill"></i></a></li>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Projects</a></li>
-			<li><a href="#">Contact</a></li>
+            <li><a href="#About" class="nav-brand"><i class="bi bi-x-diamond-fill"></i></a></li>
+			<li><a href="#Home">Home</a></li>
+			<li><a href="#About">About</a></li>
+			<li><a href="#Project">Projects</a></li>
+			<li><a href="#Contact">Contact</a></li>
 		</ul>
 		<div class="mobile-bar" onClick="toggleMobileMenu();"> 
 			<!-- <span></span>
@@ -69,103 +66,95 @@
       </a>
     </div> -->
 
+
     <!--ABOUT ME-->
-    <!-- <div class="container-fluid">
-      <h1 id="aboutMe">ABOUT</h1>
+    <div class="about u-bg__indigo" id="About">
+      <h1 class="about__title u-color__white u-align__center u-p__40" id="aboutMe">ABOUT</h1>
       <div class="row">
-        <div class="col-12 col-s-6 order-1">
-          <img src="images/violet.png" class="img-fluid">
+        <div class="col-6">
+          <img class="about__img" src="images/violet.png">
         </div>
-        <div class="col-12 col-md-6 col-lg-6 order-2">
-          <p>XENIA MAE ABAÑO, a front-end web developer based in the Philippines. She graduated with a bachelors degree in Computer Engineering at Samar State University. She loves putting creative ideas into reality. That is what inspired her to pursue a career in web development.</p>
+        <div class="col-6">
+          <p class="about__text u-color__white">XENIA MAE ABAÑO, a front-end web developer based in the Philippines. She graduated with a bachelors degree in Computer Engineering at Samar State University. She loves putting creative ideas into reality. That is what inspired her to pursue a career in web development.</p>
         </div>
       </div>
     </div>
-
-    <div class="parallax1"></div> -->
 
     <!-- PROJECTS -->
-    <!-- <div class="container">
-      <div class="projects">
-      <h1 id="projects">PROJECTS</h1>
-      <div class="row">
-        <div class="col">
-          <div class="d-flex flex-wrap justify-content-center">
-            <div class="card">
-             <img src="images/xbee.gif" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title">Mesh Oriented Networks</h5>
-               <p class="card-text">A wireless communication system based on mobile application using mesh networks.</p>
-               <a href="https://www.facebook.com/ssucatbalogan/posts/2741064769507045" class="btn">Read More</a>
-             </div>
-           </div>
-           <div class="card">
-             <img src="images/uno.gif" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title">LED Display using UNO</h5>
-               <p class="card-text">Display characters and numbers by interfacing 7 segment LED display and Arduino Uno.</p>
-               <a href="https://drive.google.com/drive/folders/1Tf9kePeF22sCWABO_pCTi93wdLOqzIcY?usp=sharing" class="btn">View Project</a>
-             </div>
-           </div>
-           <div class="card">
-             <img src="images/coming.gif" class="card-img-top" alt="...">
-             <div class="card-body">
-               <h5 class="card-title">Artixen - Eccomerce Store</h5>
-               <p class="card-text">New awesome projects to come. Send a message and be updated with the latest creative ideas.</p>
-               <a href="https://capstone3-eccomerce.netlify.app/" class="btn">View Project</a>
-             </div>
-           </div>
-          </div>
-        </div>
-      </div>
-    </div>   
+    <div class="container">
+        <div class="projects" id="Project">
+            <h1 class="projects__title">PROJECTS</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/xbee.gif" class="card__img" alt="...">
+                        <h5 class="card__title u-mt__20">Course Booking System</h5>
+                        <p class="card__text">A wireless communication system based on mobile application using mesh networks.</p>
+                        <a href="https://www.facebook.com/ssucatbalogan/posts/2741064769507045" class="button u-mt__20">Read More</a>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card">
+                        <img src="images/xbee.gif" class="card__img" alt="...">
+                        <h5 class="card__title u-mt__20">E-commerce Store</h5>
+                        <p class="card__text">Made up with static technologies like HTML, CSS, Bootstrap with backend using Node.js, Express.js & MongoDB.</p>
+                        <a href="https://ecommerce-capstone2.netlify.app/" class="button u-mt__20">Read More</a>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card">
+                        <img src="images/xbee.gif" class="card__img" alt="...">
+                        <h5 class="card__title u-mt__20">Artixen Store</h5>
+                        <p class="card__text">Created using React.js with backend integration of Node.js, Express.js and MongoDB.</p>
+                        <a href="https://capstone3-eccomerce.netlify.app/" class="button u-mt__20">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>   
     </div>
-      
-    <div class="parallax2"></div> -->
 
-    <!-- CONTACT -->
-    <!-- <div class="contact">
-      <h1 id="contact">CONTACT</h1>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <form action="https://formspree.io/f/xwkazykw" method="POST">
-            <div class="form-group">
-              <label for="exampleInputName">Your Name</label>
-              <input type="text" class="form-control" id="exampleInputName" name="_senderName">
-              <small class="form-text text-muted">Hello! Tell me your name.</small>
+    <div class="container">
+        <div class="contact" id="Contact">
+            <h1 class="contact__title u-m__40">CONTACT</h1>
+            <div class="contact-row">
+                <div class="col-6">
+                        <form action="https://formspree.io/f/xwkazykw" method="POST" class="contact__info">
+                            <div class="form-group">
+                              <label for="exampleInputName">Your Name</label>
+                              <input type="text" class="c-input__info" id="exampleInputName" name="_senderName" placeholder="Hello! Tell me your name.">
+                            </div>
+                            <div class="form-group u-mt__20">
+                              <label for="exampleInputEmail">Email address</label>
+                              <input type="email" class="c-input__info" id="exampleInputEmail" name="_replyto" placeholder="Put your email here.">
+                            </div>
+                            <div class="form-group u-mt__20">
+                              <label for="exampleInputSubject">Message</label>
+                              <textarea type="text" class="c-input__info" id="exampleInputSubject" name="message" placeholder="Write a message."></textarea>
+                            </div>
+                            <div class="button__center u-mt__20 u-mb__50">
+                              <button type="submit" class="button" data-toggle="modal" data-target="#example-modal-s">Submit</button>
+                            </div>
+                        </form>
+                </div>
+                <div class="col-6">
+                    <div class="contact__info u-mb__50">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.19547075649!2d123.88922381402057!3d10.326236270167074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9992e1f50073b%3A0x4c291af87c81cc9d!2sPeace%20Valley%20Lahug!5e0!3m2!1sen!2sph!4v1628733776840!5m2!1sen!2sph" width="100%" height="100%" allowfullscreen=""></iframe>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail" name="_replyto">
-              <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputSubject">Message</label>
-              <textarea type="text" class="form-control" id="exampleInputSubject" name="message"></textarea>
-              <small class="form-text text-muted">What do you want to talk about?</small>
-            </div>
+        </div>   
+    </div>
 
-            <div class="btn-block">
-              <button type="submit" class="btn" data-toggle="modal" data-target="#example-modal-s">Submit</button>
-            </div>
-          </form>
-        </div>
-        <div class="col-12 col-md-6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.19547075649!2d123.88922381402057!3d10.326236270167074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9992e1f50073b%3A0x4c291af87c81cc9d!2sPeace%20Valley%20Lahug!5e0!3m2!1sen!2sph!4v1628733776840!5m2!1sen!2sph" width="100%" height="100%" allowfullscreen=""></iframe>
-        </div>
-      </div>
-    </div> -->
-    
     <!-- FOOTER -->
-    <footer>
-        <div class="footer-icons">
-          <a class="footer-icons__icon" href="https://www.facebook.com/xeniamaela.art"><i class="bi bi-facebook"></i></a>
-          <a class="footer-icons__icon" href="https://www.instagram.com/xeniamaela/"><i class="bi bi-instagram"></i></a>
-          <a class="footer-icons__icon" href="https://www.youtube.com/channel/UCsQaD3ZHphW4RGLWiJCB7Wg"><i class="bi bi-youtube"></i></a>
-          <a class="footer-icons__icon" href="https://www.linkedin.com/in/xeniamaeabano/"><i class="bi bi-linkedin"></i></a>
-          <a class="footer-icons__icon" href="https://github.com/xeniamaela"><i class="bi bi-github"></i></a>
+        <div class="footer-icons u-bg__black u-align__center">
+          <a class="footer-icons__icon u-color__white" href="https://www.facebook.com/xeniamaela.art"><i class="bi bi-facebook"></i></a>
+          <a class="footer-icons__icon u-color__white" href="https://www.instagram.com/xeniamaela/"><i class="bi bi-instagram"></i></a>
+          <a class="footer-icons__icon u-color__white" href="https://www.youtube.com/channel/UCsQaD3ZHphW4RGLWiJCB7Wg"><i class="bi bi-youtube"></i></a>
+          <a class="footer-icons__icon u-color__white" href="https://www.linkedin.com/in/xeniamaeabano/"><i class="bi bi-linkedin"></i></a>
+          <a class="footer-icons__icon u-color__white" href="https://github.com/xeniamaela"><i class="bi bi-github"></i></a>
         </div>
-      </footer>
   
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

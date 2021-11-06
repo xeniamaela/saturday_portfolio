@@ -1,6 +1,17 @@
 @import 'layout/navbar';
 @import 'layout/footer';
+@import 'layout/about';
+@import 'layout/landing';
+@import 'layout/projects';
+@import 'layout/contact';
 
 @import 'foundation/reset';
 
 @import 'object/component/grid';
+@import 'object/component/card';
+@import 'object/component/button';
+@import 'object/component/input';
+
+@import 'object/utility/color';
+@import 'object/utility/align';
+@import 'object/utility/margin';

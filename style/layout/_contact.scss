@@ -1,0 +1,39 @@
+.col-6 {
+    float: left;
+    width: 50%;
+    padding: 0px 40px;
+    padding-bottom: 50px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .col {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+.contact {
+    &__title {
+        text-align: center;
+        
+    }
+    &__info {
+
+        form {
+            .form-group {
+                margin: 20px 10px;
+            }
+        }
+    }
+}
